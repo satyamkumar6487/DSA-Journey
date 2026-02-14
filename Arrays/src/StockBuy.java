@@ -1,5 +1,3 @@
-package Arrays;
-
 public class StockBuy {
 
     public static void main (String[] args){
