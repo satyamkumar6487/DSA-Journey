@@ -1,0 +1,27 @@
+public class FindPeak {
+
+    public static void main (String []args){
+
+        int []arr= {1, 2, 4, 5, 7, 8, 3};
+
+        System.out.println(peakfind(arr));
+
+    }
+    static int peakfind(int []arr){
+
+        int low = 0 ;
+        int high = arr.length-1;
+
+        while (low < high){
+            int mid = low + (high - low) / 2 ;
+
+            if (arr[mid] < arr[mid+ 1]){
+
+                low = mid+ 1;
+            } else{
+                high = mid;
+            }
+        }
+        return arr[low];
+    }
+}
