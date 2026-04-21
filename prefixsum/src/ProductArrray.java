@@ -11,7 +11,7 @@ public class ProductArrray {
        }
     }
 
-     static int [] productExceptSelf(int []arr){
+     static int []    productExceptSelf(int []arr){
 
         int n = arr.length;
 
